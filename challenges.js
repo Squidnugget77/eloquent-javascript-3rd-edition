@@ -22,3 +22,19 @@ for (let FizzBuzz=1; FizzBuzz <= 100; FizzBuzz+=1) {
     }
 }
 //  Exercise 3: Checkerboard
+let size = 6
+let chessboard = ""
+for (let ii = 0;ii<size;ii+=1) {
+    let chessboard = ""
+    if (ii%2 == 0) {
+        while (chessboard.length < size) {
+            chessboard += " #"
+        }
+    }
+    else {
+        while (chessboard.length < size) {
+            chessboard += "# "
+        }
+    }
+    console.log(chessboard)
+}
