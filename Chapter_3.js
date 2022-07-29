@@ -14,6 +14,15 @@ function isEven(n1) {
 //     }
 //     console.log(Math.abs(n1%2))
 // }
-    let n1 = 0
+    n1 = Math.abs(n1)
+    if (n1 == 0) {
+        console.log("The number is even!")
+    }
+    else if (n1 == 1) {
+        console.log("The number is odd!")
+    }
+    else {
+        isEven(n1-2)
+    }
 }
-isEven(-4)
+isEven(-6)
