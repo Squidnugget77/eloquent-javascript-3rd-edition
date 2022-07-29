@@ -26,3 +26,5 @@ function isEven(n1) {
     }
 }
 isEven(-6)
+
+//  Exercise 3: 
