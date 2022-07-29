@@ -27,4 +27,14 @@ function isEven(n1) {
 }
 isEven(-6)
 
-//  Exercise 3: 
+//  Exercise 3: Bean Counting
+function countChar(w1,k1) {
+    let count = 0
+    for (let index = w1.length; index > -1; index -= 1) {
+        if (w1[index] == k1) {
+            count += 1
+        }
+    }
+    console.log(count)
+}
+countChar("Hanna","H")
