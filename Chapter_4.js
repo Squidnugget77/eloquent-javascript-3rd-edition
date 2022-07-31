@@ -22,6 +22,6 @@ function sum(range) {
     return sums
 }
 console.log(sum(range(1,10)))
-//  Exercise 2: 
+//  Exercise 2: Reversing an Array
 
 //  Excerise 3: 
