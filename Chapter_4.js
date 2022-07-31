@@ -22,6 +22,28 @@ function sum(range) {
     return sums
 }
 console.log(sum(range(1,10)))
-//  Exercise 2: Reversing an Array
 
-//  Excerise 3: 
+//  Exercise 2: Reversing an Array
+function reverseArray(array) {
+    reversed = []
+    for (let index of array) {
+        reversed.unshift(index)
+    }
+    return reversed
+}
+console.log(reverseArray([1,2,3,4,5]))
+arrayValue = [1,2,3,4,5,6]
+function reverseArrayInPlace(array) {
+    for (let index = 1; index <= Math.floor(arrayValue.length/2); index++) {
+        array.unshift(-index)
+        array.shift(index)
+        delete array(index+1)
+        delete array(-index-1)
+    }
+    return array
+}
+console.log(reverseArray(arrayValue))
+
+//  Exercise 3: A List
+
+//  Exercise 4: Deep Comparsion
