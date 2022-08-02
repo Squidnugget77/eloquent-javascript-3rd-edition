@@ -44,6 +44,15 @@ function reverseArrayInPlace(array) {
 }
 console.log(reverseArray(arrayValue))
 
-//  Exercise 3: A List
-
+//  Exercise 3: A List (CHECK)
+function arrayToList(numbers) {
+    list = []
+    for (index of numbers) {
+        list = {Value: index,
+        rest: list}
+    }
+    return list
+}
+console.log(arrayToList([10,20,30,40,50]))
+function listToArray(array)
 //  Exercise 4: Deep Comparsion
