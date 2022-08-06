@@ -13,7 +13,7 @@ function range(n1, n2, step = 1) {
     }
     return ans
 }
-console.log(range(1,10,-2))
+// console.log(range(1,10,-2))
 function sum(range) {
     let sums = 0
     for (let index of range) {
@@ -21,7 +21,7 @@ function sum(range) {
     }
     return sums
 }
-console.log(sum(range(1,10)))
+// console.log(sum(range(1,10)))
 
 //  Exercise 2: Reversing an Array
 function reverseArray(array) {
@@ -31,7 +31,7 @@ function reverseArray(array) {
     }
     return reversed
 }
-console.log(reverseArray([1,2,3,4,5]))
+// console.log(reverseArray([1,2,3,4,5]))
 arrayValue = [1,2,3,4,5,6]
 function reverseArrayInPlace(array) {
     for (let index = 1; index <= Math.floor(arrayValue.length/2); index++) {
@@ -42,17 +42,20 @@ function reverseArrayInPlace(array) {
     }
     return array
 }
-console.log(reverseArray(arrayValue))
+// console.log(reverseArray(arrayValue))
 
-//  Exercise 3: A List (CHECK)
-function arrayToList(numbers) {
-    list = []
-    for (index of numbers) {
-        list = {Value: index,
-        rest: list}
+//  Exercise 3: A List (ADD RECURSIVE FUNCTION)
+function arrayToList(arr) {
+    list = null
+    for (let i = arr.length - 1; i >= 0; i--) {
+        list = { value: arr[i], rest: list };
     }
     return list
 }
-console.log(arrayToList([10,20,30,40,50]))
-function listToArray(array)
+// console.log(arrayToList([10,20,30]))
+function listToArray(object) {
+    list = []
+    console.log(object.rest.value)
+}
+console.log(listToArray(arrayToList([10,20])))
 //  Exercise 4: Deep Comparsion
